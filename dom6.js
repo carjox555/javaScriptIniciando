@@ -16,11 +16,11 @@ const users=[
 const amy=users.find((user)=> user.uid=== 2);
 console.log(amy);
 
-//buscar elemento
+//buscar si hay un elemento devuelve true
 const existe =users.some((user)=> user.uid ===4);
 console.log(existe);
-
-const indice =users.findIndex((user)=> user.uid===2);
+//buscar por indice si no lo encuentra devulve -1
+const indice =users.findIndex((user)=> user.uid===5);
 console.log(users[indice]);
  
 //const userFiltrado=users.filter((user)=>user.uid !==3);
@@ -31,14 +31,20 @@ console.log(users[indice]);
 //console.log(mayores);
 
 
-const numeros =["1","2","3","4","50",];
+const numeros =[1,2,3,4,5,6];
 const letas =["a","b","c","d"];
 
+//une dos o mas arrays 
 const arr3= numeros.concat(letas);
-console.log(arr3);
+console.log("metodo concat: "+arr3);
 
+//Sprit operator
+const arra3=[...numeros, "--",...letas]
+console.log(arra3)
+
+// suma todos los elementos   recibe acomulador y valor actual
 const sumartodos =numeros.reduce((acc,vrActual)=> acc+vrActual);
-console.log(sumartodos);
+console.log("Metodo Reduce: "+sumartodos);
 
 
 const nums2 =numeros.map((nume)=>nume*2);
