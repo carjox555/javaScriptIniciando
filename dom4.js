@@ -2,7 +2,7 @@ const lista = document.querySelector("#lista");
 const fragment = document.createDocumentFragment();
 const liTemplate= document.querySelector("#liTemplate");
 
-const arrayPaises = ["Peru","mexico","Colombia"];
+const arrayPaises = ["Peru","mexico","Colombia","Brazil"];
 
 
 arrayPaises.forEach(pais =>{

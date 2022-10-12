@@ -36,6 +36,7 @@ const pintarCarrito=(producto)=>{
     const clone =template.content.firstElementChild.cloneNode(true);
     clone.querySelector('.lead').textContent=item.titulo;
     clone.querySelector('.badge').textContent=item.cantidad;
+    clone.querySelector('div .lead span').textContent=item.precio;
 
     fragment.appendChild(clone);
 })
